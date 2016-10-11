@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="default" extends="struts-default">
+    <action name="showWords" class = "Action.ShowWords">
+        <result name = "success">/findBooks.jsp</result>
+        <result name = "input">/showWords.jsp</result>
+    </action>
+        <action name="showBooks" class = "Action.ShowBooks">
+            <result>/showBooks.jsp</result>
+        </action>
+
+        <action name="showbookinfo" class = "Action.BookInfo">
+            <result>/bookInfo.jsp</result>
+        </action>
+
+        <action name="editBook" class = "Action.EditBook" method="execute">
+            <result>/editBooks.jsp</result>
+        </action>
+        <action name="editBook2" class = "Action.EditBook" method="change">
+            <result>/index.jsp</result>
+        </action>
+        <action name="deleteBook" class = "Action.EditBook" method="del">
+            <result>/index.jsp</result>
+        </action>
+        <action name="addBook1" class = "Action.Add" method="addbook">
+            <result>/insertBook.jsp</result>
+        </action>
+        <action name="addBook2" class = "Action.Add" method="addbook2">
+            <result>/index.jsp</result>
+        </action>
+        <action name="addAuthor" class = "Action.Add" method="addauthor">
+            <result name = "success">/index.jsp</result>
+            <result name = "input">/insertAuthor.jsp</result>
+        </action>
+    </package>
+</struts>
