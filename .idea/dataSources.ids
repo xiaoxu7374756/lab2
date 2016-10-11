@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - bookdb@localhost" uuid="c8fd1af4-1835-4503-b71b-76b15e5591ce">
+    <database-info product="MySQL" version="5.7.15-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="bookdb">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <schema id="5" name="sakila"/>
+      <schema id="6" name="sys"/>
+      <schema id="7" name="world"/>
+      <table id="8" parent="1" name="author"/>
+      <table id="9" parent="1" name="book"/>
+      <column id="10" parent="8" name="authorid">
+        <data-type>char(30)|0</data-type>
+      </column>
+      <column id="11" parent="8" name="name">
+        <data-type>char(50)|0</data-type>
+      </column>
+      <column id="12" parent="8" name="age">
+        <data-type>int(3)|0</data-type>
+      </column>
+      <column id="13" parent="8" name="country">
+        <mandatory>1</mandatory>
+        <data-type>char(20)|0</data-type>
+      </column>
+      <column id="14" parent="9" name="isbn">
+        <data-type>varchar(13)|0</data-type>
+      </column>
+      <column id="15" parent="9" name="Title">
+        <data-type>char(70)|0</data-type>
+      </column>
+      <column id="16" parent="9" name="AuthorID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="17" parent="9" name="publisher">
+        <mandatory>1</mandatory>
+        <data-type>char(30)|0</data-type>
+      </column>
+      <column id="18" parent="9" name="publishdate">
+        <data-type>date|0</data-type>
+      </column>
+      <column id="19" parent="9" name="price">
+        <mandatory>1</mandatory>
+        <data-type>double(16,2)|0</data-type>
+      </column>
+    </database-model>
+  </data-source>
+  <data-source name="MySQL - bookdb@localhost [2]" uuid="3ef16749-08a9-4371-a19d-cd0089d0d991">
+    <database-info product="MySQL" version="5.7.15-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="bookdb">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <schema id="5" name="sakila"/>
+      <schema id="6" name="sys"/>
+      <schema id="7" name="world"/>
+      <table id="8" parent="1" name="author"/>
+      <table id="9" parent="1" name="book"/>
+      <column id="10" parent="8" name="authorid">
+        <data-type>char(30)|0</data-type>
+      </column>
+      <column id="11" parent="8" name="name">
+        <data-type>char(50)|0</data-type>
+      </column>
+      <column id="12" parent="8" name="age">
+        <data-type>int(3)|0</data-type>
+      </column>
+      <column id="13" parent="8" name="country">
+        <mandatory>1</mandatory>
+        <data-type>char(20)|0</data-type>
+      </column>
+      <column id="14" parent="9" name="isbn">
+        <data-type>varchar(13)|0</data-type>
+      </column>
+      <column id="15" parent="9" name="Title">
+        <data-type>char(70)|0</data-type>
+      </column>
+      <column id="16" parent="9" name="AuthorID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="17" parent="9" name="publisher">
+        <mandatory>1</mandatory>
+        <data-type>char(30)|0</data-type>
+      </column>
+      <column id="18" parent="9" name="publishdate">
+        <data-type>date|0</data-type>
+      </column>
+      <column id="19" parent="9" name="price">
+        <mandatory>1</mandatory>
+        <data-type>double(16,2)|0</data-type>
+      </column>
+    </database-model>
+  </data-source>
+</component>
